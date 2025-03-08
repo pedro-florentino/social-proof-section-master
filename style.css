@@ -68,7 +68,8 @@ main {
     justify-content: space-between;
     align-content: center;
     margin: 10px 0;
-    height: 200px;
+    width: 100%;
+    height: 238px;
 }
 
 .rated {
@@ -78,8 +79,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
-    max-width: 360px;
+    padding: 10px;
 }
 
 .img-star {
@@ -113,7 +113,7 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 150px;
+    width: 210px;
     height: 40px;
     margin-bottom: 20px;
 }
@@ -125,7 +125,7 @@ main {
 }
 
 .comment-user h2, h3 {
-    text-align: center;
+    text-align: left;
     font-size: 1rem;
     font-weight: 600;
 }
@@ -165,20 +165,21 @@ main {
         flex-direction: column;
         align-content: center;
         margin: 0 0;
+        max-width: 400px;
     }
 
     .rated {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        width: 460px;
+        width: 400px;
         height: 50px;
         transition: transform 1s ease; 
     }
     
     .rated p { margin-top: 0; }
-    .rated#rated1 { transform: translateX(-80px); }
-    .rated#rated2 { transform: translateX(-40px); }
+    .rated#rated1 { transform: translateX(-60px); }
+    .rated#rated2 { transform: translateX(-30px); }
 
     .comment-container {
         margin: 30px 0 0 0;
