@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+:root {
+    --darkMagenta: hsl(300, 43%, 22%);
+    --softPink: hsl(333, 80%, 67%);
+    --darkGrayishMagenta: hsl(303, 10%, 53%);
+    --lightGrayishMagenta: hsl(300, 24%, 96%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    font-family: "League Spartan", sans-serif;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+main {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container h1 {
+    color: var(--darkMagenta);
+    text-align: center;
+    font-size: 2rem;
+}
+
+.text-container p {
+    color: var(--darkGrayishMagenta);
+    text-align: center;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.rated-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 10px 0;
+}
+
+.rated {
+    background-color: var(--lightGrayishMagenta);
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 10px 0 10px 0;
+}
+
+.img-star {
+    background: url(images/icon-star.svg) repeat top center;
+    height: 16px;
+    width: 84px;
+    margin: auto;
+}
+
+.rated p {
+    color: var(--darkMagenta);
+    text-align: center;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.comment-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--darkMagenta);
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 25px;
+}
+
+.comment-user {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.comment-user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.comment-user h2, h3 {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.comment-user h3 {
+    color: var(--softPink);
+}
+
+.comment-container p {
+    text-align: left;
+}
